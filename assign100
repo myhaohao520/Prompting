@@ -3,6 +3,6 @@ Using C++:
 Given the array: int numbers[10] = {1,2,3,4,5}
 
 Write a for loop to assign the number "100" to the number of elements 
-up to the size of the array and display those those number of elements
-up to the size of the array but do not include the zeros, in one single 
+up to the size of the array and display those number of elements up
+to the size of the array but do not include the zeros, in one single 
 line, with each value separated by a space " ".
