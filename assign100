@@ -2,6 +2,6 @@ Using C++:
 
 Given the array: int numbers[10] = {1,2,3,4,5}
 
-Write a for loop to assign the number "100" to the 5 elements 
-in the array and display the 5 values in the array in one single 
-line, with each value separated by a space " ".
+Write a for loop to assign the number "100" to the number of elements 
+up to the size of the array and display those values in the array in 
+one single line, with each value separated by a space " ".
