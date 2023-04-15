@@ -1,0 +1,7 @@
+Using C++:
+
+Given the array: int numbers[10] = {1,2,3,4,5}
+
+Write a for loop to assign the number "100" to the elements 
+in the array and display the values in the array in one single 
+line, with each value separated by a space " ".
