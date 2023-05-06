@@ -1,0 +1,149 @@
+Using c++: write code given the following:
+
+Values from file:
+11
+-200
+218
+-143
+283
+253
+-202
+-235
+-204
+66
+-147
+300
+184
+65
+39
+-277
+237
+155
+263
+20
+-156
+91
+-12
+-160
+62
+-225
+-64
+-215
+-185
+66
+221
+-152
+208
+-52
+121
+114
+-180
+-206
+-19
+-260
+-137
+-59
+-169
+300
+-58
+208
+-291
+-23
+-64
+173
+151
+19
+-175
+126
+-107
+-232
+208
+-102
+0
+124
+-91
+-63
+-282
+-196
+37
+-43
+-24
+285
+194
+-132
+-274
+-112
+-72
+20
+187
+-210
+39
+-185
+137
+69
+-16
+2
+-167
+22
+-275
+213
+96
+-256
+26
+100
+76
+73
+192
+-262
+253
+-232
+214
+-132
+253
+-167
+219
+-16
+76
+252
+257
+94
+63
+18
+156
+-186
+-246
+188
+140
+-84
+18
+-43
+-71
+-113
+273
+129
+118
+-22
+}
+
+Given these function prototypes:
+void GetInputs(int[], int[], int&, int&);
+void Print(ofstream&, int[], int);
+void stat(int[], int, int&, int&, double&);
+void SortArray(int[], int);
+
+In main function:
+const int SIZE = 100; //maximum values to be read from file
+int valid[50]; //array to store valid values from 0 to 100
+int invalid[50]; //array to strore invalid values outside the range 0 to 100
+
+1. Create ofstream output and open output file names "output.txt", close the file at the end of the main function
+
+2. Call GetInputs function to open user entered input filename, to read values from user entered inputfile filename, read values between 0 and 100 into valid[50] array and other values into invalid[50] array, only read up to 50 values into each array, skip the read of the values, if file entered is empty display "file is empty", if file does not exist display "error opening file", after values are read into each array, close inpufile
+
+3. Call Print function for the first time to print out values in the invalid array to output file named "output.txt", 5 values on each line separated by 2 spaces, with one line at the top for title "invalid scores: "
+
+4. Call Print function for the second time to print out values in the valid array to output file, 5 values on each line separated by 2 spaces, with one line at the top for title "valid scores: "
+
+5. Call stat function to display the lowest value in the valid array, display the largest value in valid array, display average of all values in valid array
+
+6. Call SotArray to sort values in valid array in ascending order. Call Print function for the third time to print out the values in the sorted valid array, 5 values on each line separated by 2 spaces, with one line at the top for title "sorted scores: "
